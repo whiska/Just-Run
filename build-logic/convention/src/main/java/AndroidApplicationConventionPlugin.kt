@@ -1,4 +1,6 @@
 import com.android.build.api.dsl.ApplicationExtension
+import com.weijia.convention.ExtensionType
+import com.weijia.convention.configureBuildTypes
 import com.weijia.convention.configureKotlinAndroid
 import com.weijia.convention.libs
 import org.gradle.api.Plugin
@@ -24,6 +26,7 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
                 }
 
                 configureKotlinAndroid(this)
+                configureBuildTypes(this, ExtensionType.APPLICATION)
             }
         }
     }

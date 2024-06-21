@@ -1,8 +1,8 @@
 import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
 
 plugins {
+    alias(libs.plugins.justrun.android.application.compose)
     alias(libs.plugins.mapsplatform.secrets.plugin)
-    alias(libs.plugins.justrun.android.application)
 }
 
 android {
@@ -14,25 +14,9 @@ android {
             useSupportLibrary = true
         }
     }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-        }
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
-    }
 }
 
 dependencies {
-
     implementation(libs.coil.compose)
 
     implementation(libs.androidx.activity.compose)
