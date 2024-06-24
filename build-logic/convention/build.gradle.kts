@@ -23,5 +23,16 @@ gradlePlugin {
             id = "justrun.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+
+        register("androidLibrary") {
+            id = "justrun.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+
+        register("androidLibraryCompose") {
+            id = "justrun.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+
     }
 }
