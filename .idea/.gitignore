@@ -1,3 +1,19 @@
 # Default ignored files
-/shelf/
-/workspace.xml
+*.iml
+.gradle
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+*.apk
+output.json
+.cxx/
+*.log
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+*.jks
+*.keystore

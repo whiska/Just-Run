@@ -2,6 +2,7 @@ import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
 
 plugins {
     alias(libs.plugins.justrun.android.application.compose)
+    alias(libs.plugins.justrun.jvm.ktor)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
 

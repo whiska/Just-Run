@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.justrun.android.library)
+    alias(libs.plugins.justrun.android.room)
 }
 
 android {
