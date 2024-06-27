@@ -1,4 +1,5 @@
 import com.android.build.gradle.LibraryExtension
+import com.weijia.convention.configureAndroidCompose
 import com.weijia.convention.configureKotlinAndroid
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -14,6 +15,7 @@ class AndroidLibraryComposeConventionPlugin: Plugin<Project> {
 
             val extension = extensions.getByType<LibraryExtension>()
             configureKotlinAndroid(extension)
+            configureAndroidCompose(extension)
         }
     }
 }
